@@ -1,29 +1,25 @@
-# Xilinx-adas-inference-demo
-ADAS related models (vehicle and person detection, lane detection, speed limit sign detection) inference demo, the post-processing module is not added.
+# PNP-camera-calibration-demo
+Perform intrinsic parameter calibration using a checkerboard pattern and extrinsic parameter calibration using the PnP method, enabling monocular distance measurement.
 
-## 推理结果
+## 测距效果
 
-展示系统工程中车人检测、车道线检测、限速牌检测的功能测试视频。
+测试点世界坐标实际横距1.25米，纵距5米。
 
-![功能测试](https://github.com/allrivertosea/Xilinx-adas-inference-demo/blob/main/test.gif)
+![功能测试](https://github.com/allrivertosea/PNP-camera-calibration/blob/main/result.png)
 
-## 项目简介
 
-- 基于**DPU**加速推理adas相关模型**
-- 支持**Zynq UltraScale+ MPSoC系列开发板**
-- 支持**XAZU3EG型号芯片**
+## 环境配置
 
-## 环境说明
-
-- Vitis ai 1.2.82
-- Opencv 3.4.13
-- cmake-3.19.3-Linux-aarch64
+conda create -n pnp_cc python=3.8 -y
+conda activate pnp_cc
+pip install -r requirements.txt
 
 ## 使用说明
 
 ```
-make
-./xxx.elf xxx.mp4
+python genInt.py   #生成内参
+python genExt.py   #生成外参
+python PNP_dis.py  #测距验证
 ```
 
 
