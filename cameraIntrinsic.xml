@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<opencv_storage>
+	<camIntrinsicMat>
+		<data>1415.0399378953466 0.0 643.8033385423112 0.0 1393.758278905856 358.77182568539814 0.0 0.0 1.0</data>
+	</camIntrinsicMat>
+	<distortionCoefficients>
+		<data>-0.36263278511369085 -0.9785771583110308 -0.006993714249405784 0.00286788183776933 2.9862276046494762</data>
+	</distortionCoefficients>
+</opencv_storage>
