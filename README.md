@@ -11,7 +11,9 @@ Perform intrinsic parameter calibration using a checkerboard pattern and extrins
 ## 环境配置
 
 conda create -n pnp_cc python=3.8 -y
+
 conda activate pnp_cc
+
 pip install -r requirements.txt
 
 ## 使用说明
